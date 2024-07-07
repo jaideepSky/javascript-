@@ -48,3 +48,37 @@ console.log(typeof  myfunction); // function
 console.log(typeof  heros); // object
 
 
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+
+// Stack Memory uses in Primitive datatype
+
+// Heap Memory uses in  Non Primitive datatype
+
+
+// When we use  Stack memory we have the copy  of original value
+// When we use  Heap memory we have the referance   of original value
+
+let myName = " jaideep"
+
+let anotherName = myName
+anotherName = " jaggu"
+console.log(myName);
+console.log(anotherName);
+
+// Eg of a stack 
+
+
+
+let userOne = {
+   email : "abc@gmail.com",
+   upi : "jand@jbl",
+}
+let userTwo = userOne
+userTwo.email = "jaideeep.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// Eg of a Heap 
