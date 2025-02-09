@@ -97,9 +97,44 @@ else{
  })
 
  async function consumePromiseFive() {
-    const response = await promiseFive
-    console.log(response);
+    // const response = await promiseFive
+    // console.log(response);
+    try {
+        const response = await promiseFive
+    console.log(response); 
+    } catch (error) {
+            console.log(error);
+            
+    }
     
  }
  consumePromiseFive()
- 
+
+//  async function getAllUser() {
+//        try {
+//         const response = await  fetch("https://api.github.com/users/jaideepSky")
+//         // console.log(response);
+//        const data = await response.json()
+//        console.log(data);
+    
+       
+//        } catch (error) {
+//         console.log("E: ",error);
+        
+//        }
+//  }
+//  getAllUser()
+
+fetch('https://api.github.com/users/jaideepSky')
+.then(function(response){
+    return response.json()
+
+}).then((data)=>{
+    console.log(data);
+})
+
+
+.catch((error)=>{
+    console.log(error);
+    
+})
